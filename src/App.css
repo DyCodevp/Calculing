@@ -5,13 +5,37 @@
   text-align: center;
 } */
 .buttonsRoot {
-  background-color: yellow;
+  background-color: rgba(118, 47, 21, 0.311);
 }
 .buttons {
   background-color: coral;
-  bottom: 0;
+  height: 50px;
+  border: 1px solid lightgray;
 }
-
+.operatorButtons {
+  background-color: gray;
+  height: 50px;
+  border: 1px solid rgb(43, 58, 32);
+}
+.App-container {
+  background-color: chocolate;
+  width: 400px;
+  height: 400px;
+}
+.buttonsRoot {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+}
+.display {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 40px;
+  font-size: 30px;
+  text-align: right;
+  border: 1px solid #000;
+  padding-right: 10px;
+  padding-top: 5px;
+}
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
